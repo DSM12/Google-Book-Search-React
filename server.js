@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-const MONGODB_URI = process.env.mongodburi;
+const MONGODB_URI = process.env.MONGODB_URI;
 // Connect to the Mongo DB
 mongoose.connect(MONGODB_URI || "mongodb://localhost/googlebooks", { useNewUrlParser: true });
 

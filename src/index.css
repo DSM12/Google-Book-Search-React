@@ -5,9 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://cdn.wallpapersafari.com/54/74/MniBDw.jpg");
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#Navybarr {
+  background-color: green;
+}
+
+
+
+#Jumbotron {
+  background-color: yellow;
+}
+
+#BookSearch {
+  background-color: blue;
+}
+

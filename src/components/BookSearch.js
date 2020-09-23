@@ -3,12 +3,12 @@ import React from "react";
 function BookSearch(props) {
     return (
         <div>
-            <div className="card rounded-0">
+            <div className="card rounded-0" id="BookSearch">
                 <div className="card-body">
                     <h5 className="card-title">Book Search</h5>
                     <form>
                         <div className="form-group">
-                            <label for="bookSearchInput">Title or Author</label>
+                            <label htmlFor="bookSearchInput">Title or Author</label>
                             <input type="text" className="form-control" id="bookSearchInput"
                             name="bookSearchInput"
                             onChange={props.handleInputChange}

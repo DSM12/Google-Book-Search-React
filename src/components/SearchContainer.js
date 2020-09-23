@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import Jumbotron from "./Jumbotron";
 import BookSearch from "./BookSearch";
 import SearchCard from "./SearchCard";
 
-class SearchContainer extends React.Component {
+
+class SearchContainer extends Component {
     state = {
         result: [],
         bookinput: ""
@@ -43,12 +44,13 @@ class SearchContainer extends React.Component {
             },
             body: JSON.stringify(bookInfo)
         })
-            .then(result => {console.log(result);
-            alert("Your book has been saved!");
-            this.setState({
-                result: [],
-                bookinput: ""
-            });
+            .then(result => {
+                console.log(result);
+                alert("Your book has been saved!");
+                this.setState({
+                    result: [],
+                    bookinput: ""
+                });
 
             })
             .catch(err => console.log(err));
